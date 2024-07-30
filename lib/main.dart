@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jab_project/view/sign_up_screen.dart';
+import 'package:jab_project/view/sign_in_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,9 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const SignUpScreen(),
+      home: const SignInScreen(),
       routes: {
-        '/SignUpScreen' : (context) => const SignUpScreen()
+        '/SignUpScreen' : (context) => const SignInScreen()
       },
     );
   }

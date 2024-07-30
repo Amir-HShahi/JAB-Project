@@ -3,8 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:jab_project/view/components/sign_button_widget.dart';
 import 'package:jab_project/view/components/sign_styled_text_field.dart';
 
-class SignUpScreen extends StatelessWidget {
-  const SignUpScreen({super.key});
+class SignInScreen extends StatelessWidget {
+  const SignInScreen({super.key});
 
   void loginWithGoogleHandler() {}
 
