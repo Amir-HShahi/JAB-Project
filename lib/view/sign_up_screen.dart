@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -7,29 +8,17 @@ class SignUpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+      backgroundColor: const Color(0xfff2faff),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.only(top: 100),
+        padding: const EdgeInsets.only(top: 60, left: 20, right: 20),
         child: SizedBox(
           width: double.infinity,
           child: Column(
             children: [
-              const Icon(Icons.lock, size: 70, color: Colors.black),
+              Text("Welcome back!",
+                  style: GoogleFonts.workSans(
+                      fontWeight: FontWeight.bold, fontSize: 30)),
               const SizedBox(height: 50),
-              Container(
-                height: 48,
-                width: 350,
-                decoration: const BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.all(Radius.circular(24))),
-                child: const Center(
-                    child: Text(
-                  "SIGN UP",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18),
-                )),
-              )
             ],
           ),
         ),
