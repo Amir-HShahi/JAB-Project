@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:jab_project/view/components/sign_button_widget.dart';
+import 'package:jab_project/view/components/sign_styled_text_field.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -20,7 +21,7 @@ class SignUpScreen extends StatelessWidget {
           width: double.infinity,
           child: Column(
             children: [
-              Text("Welcome back!",
+              Text("Welcome to JAB!",
                   style: GoogleFonts.workSans(
                       fontWeight: FontWeight.bold, fontSize: 30)),
               const SizedBox(height: 40),
@@ -40,6 +41,7 @@ class SignUpScreen extends StatelessWidget {
                       fontSize: 20,
                       color: Colors.grey)),
               const SizedBox(height: 40),
+              const SignStyledTextField(hintText: " Email Address"),
             ],
           ),
         ),
