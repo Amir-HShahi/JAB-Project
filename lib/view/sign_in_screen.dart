@@ -14,10 +14,11 @@ class SignInScreen extends StatelessWidget {
 
   void signInButtonHandler() {}
 
-  void createAccountHandler() {}
-
   @override
   Widget build(BuildContext context) {
+    void pushToSignUpAccountHandler() {
+      Navigator.pushNamed(context, "/SignUpScreen");
+    }
     return SafeArea(
         child: Scaffold(
       backgroundColor: const Color(0xfff2faff),
@@ -98,7 +99,7 @@ class SignInScreen extends StatelessWidget {
                           fontSize: 16,
                         )),
                     GestureDetector(
-                      onTap: createAccountHandler,
+                      onTap: pushToSignUpAccountHandler,
                       child: Text(" Create an account",
                           style: GoogleFonts.workSans(
                             fontWeight: FontWeight.normal,

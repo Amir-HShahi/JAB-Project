@@ -9,11 +9,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const SignUpScreen(),
+      home: const SignInScreen(),
       routes: {
         '/SignInScreen' : (context) => const SignInScreen(),
         '/SignUpScreen' : (context) => const SignUpScreen(),

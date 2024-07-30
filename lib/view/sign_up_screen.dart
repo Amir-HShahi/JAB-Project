@@ -5,17 +5,18 @@ import 'package:jab_project/view/components/sign_up_button_widget.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
-
   void signUpWithGoogleHandler() {}
 
   void signUpWithAppleHandler() {}
 
   void signUpButtonHandler() {}
 
-  void loginToAccountHandler() {}
-
   @override
   Widget build(BuildContext context) {
+    void pushToSignInScreenHandler() {
+      Navigator.pushNamed(context, "/SignInScreen");
+    }
+
     return SafeArea(
         child: Scaffold(
       backgroundColor: const Color(0xfff2faff),
@@ -114,7 +115,7 @@ class SignUpScreen extends StatelessWidget {
                           fontSize: 16,
                         )),
                     GestureDetector(
-                      onTap: loginToAccountHandler,
+                      onTap: pushToSignInScreenHandler,
                       child: Text(" Login to account",
                           style: GoogleFonts.workSans(
                             fontWeight: FontWeight.normal,
