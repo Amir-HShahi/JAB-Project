@@ -10,6 +10,8 @@ class SignUpScreen extends StatelessWidget {
 
   void loginWithAppleHandler() {}
 
+  void forgotPasswordHandler() {}
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -46,6 +48,17 @@ class SignUpScreen extends StatelessWidget {
               const SizedBox(height: 20),
               const SignStyledTextField(
                   hintText: " Password", isSuffixIconActive: true),
+              const SizedBox(height: 16),
+              Row(
+                children: [
+                  const Spacer(),
+                  GestureDetector(
+                      onTap: forgotPasswordHandler,
+                      child: Text("Forgot password?",
+                          style: GoogleFonts.workSans(
+                              fontWeight: FontWeight.normal, fontSize: 16)))
+                ],
+              )
             ],
           ),
         ),
