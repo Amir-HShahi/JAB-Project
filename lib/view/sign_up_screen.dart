@@ -41,7 +41,11 @@ class SignUpScreen extends StatelessWidget {
                       fontSize: 20,
                       color: Colors.grey)),
               const SizedBox(height: 40),
-              const SignStyledTextField(hintText: " Email Address"),
+              const SignStyledTextField(
+                  hintText: " Email Address", isSuffixIconActive: false),
+              const SizedBox(height: 20),
+              const SignStyledTextField(
+                  hintText: " Password", isSuffixIconActive: true),
             ],
           ),
         ),
