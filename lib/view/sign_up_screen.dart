@@ -21,15 +21,16 @@ class SignUpScreen extends StatelessWidget {
                       fontWeight: FontWeight.bold, fontSize: 30)),
               const SizedBox(height: 40),
               SignButtonWidget(
-                  buttonIcon: Icons.g_mobiledata_rounded,
+                  buttonImagePath: "assets/images/google-logo.png",
                   buttonText: "Login with Google",
                   buttonFunction: () {}),
               const SizedBox(height: 10),
               SignButtonWidget(
-                  buttonIcon: Icons.apple,
+                  buttonImagePath: "assets/images/apple-logo.png",
                   buttonText: "Login with Apple",
                   buttonFunction: () {}),
               const SizedBox(height: 10),
+
             ],
           ),
         ),

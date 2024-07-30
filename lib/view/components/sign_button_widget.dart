@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SignButtonWidget extends StatelessWidget {
-  final IconData buttonIcon;
+  final String buttonImagePath;
   final String buttonText;
   final Function() buttonFunction;
   const SignButtonWidget(
       {super.key,
-      required this.buttonIcon,
+      required this.buttonImagePath,
       required this.buttonText,
       required this.buttonFunction});
 
@@ -33,8 +33,12 @@ class SignButtonWidget extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(buttonIcon, size: 40, color: Colors.black),
-            const SizedBox(width: 10),
+            SizedBox(
+              height: 30,
+              width: 30,
+              child: Image(image: AssetImage(buttonImagePath)),
+            ),
+            const SizedBox(width: 15),
             Text(
               buttonText,
               style: GoogleFonts.workSans(
