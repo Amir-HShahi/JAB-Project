@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:jab_project/view/components/sign_button_widget.dart';
+import 'package:jab_project/view/components/login_button_widget.dart';
 import 'package:jab_project/view/components/sign_styled_text_field.dart';
 
 class SignInScreen extends StatelessWidget {
@@ -31,12 +31,12 @@ class SignInScreen extends StatelessWidget {
                   style: GoogleFonts.workSans(
                       fontWeight: FontWeight.bold, fontSize: 30)),
               const SizedBox(height: 40),
-              SignButtonWidget(
+              LoginButtonWidget(
                   buttonImagePath: "assets/images/google-logo.png",
                   buttonText: "Login with Google",
                   buttonFunction: loginWithGoogleHandler),
               const SizedBox(height: 10),
-              SignButtonWidget(
+              LoginButtonWidget(
                   buttonImagePath: "assets/images/apple-logo.png",
                   buttonText: "Login with Apple",
                   buttonFunction: loginWithAppleHandler),

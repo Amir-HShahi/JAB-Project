@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SignButtonWidget extends StatelessWidget {
+class LoginButtonWidget extends StatelessWidget {
   final String buttonImagePath;
   final String buttonText;
   final Function() buttonFunction;
-  const SignButtonWidget(
+  const LoginButtonWidget(
       {super.key,
       required this.buttonImagePath,
       required this.buttonText,
