@@ -5,6 +5,10 @@ import 'package:jab_project/view/components/sign_button_widget.dart';
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
 
+  void loginWithGoogleHandler() {}
+
+  void loginWithAppleHandler() {}
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -23,14 +27,19 @@ class SignUpScreen extends StatelessWidget {
               SignButtonWidget(
                   buttonImagePath: "assets/images/google-logo.png",
                   buttonText: "Login with Google",
-                  buttonFunction: () {}),
+                  buttonFunction: loginWithGoogleHandler),
               const SizedBox(height: 10),
               SignButtonWidget(
                   buttonImagePath: "assets/images/apple-logo.png",
                   buttonText: "Login with Apple",
-                  buttonFunction: () {}),
-              const SizedBox(height: 10),
-
+                  buttonFunction: loginWithAppleHandler),
+              const SizedBox(height: 40),
+              Text("or by email",
+                  style: GoogleFonts.workSans(
+                      fontWeight: FontWeight.normal,
+                      fontSize: 20,
+                      color: Colors.grey)),
+              const SizedBox(height: 40),
             ],
           ),
         ),
