@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jab_project/view/profile_screen.dart';
 import 'package:jab_project/view/sign_in_screen.dart';
 import 'package:jab_project/view/sign_up_screen.dart';
 
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/SignInScreen' : (context) => const SignInScreen(),
         '/SignUpScreen' : (context) => const SignUpScreen(),
+        '/ProfileScreen' : (context) => const ProfileScreen(),
       },
     );
   }
