@@ -12,13 +12,16 @@ class SignInScreen extends StatelessWidget {
 
   void forgotPasswordHandler() {}
 
-  void signInButtonHandler() {}
-
   @override
   Widget build(BuildContext context) {
     void pushToSignUpAccountHandler() {
       Navigator.pushNamed(context, "/SignUpScreen");
     }
+
+    void signInButtonHandler() {
+      Navigator.pushNamed(context, '/ProfileScreen');
+    }
+
     return SafeArea(
         child: Scaffold(
       backgroundColor: const Color(0xfff2faff),

@@ -5,16 +5,19 @@ import 'package:jab_project/view/components/sign_up_button_widget.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
+
   void signUpWithGoogleHandler() {}
 
   void signUpWithAppleHandler() {}
-
-  void signUpButtonHandler() {}
 
   @override
   Widget build(BuildContext context) {
     void pushToSignInScreenHandler() {
       Navigator.pushNamed(context, "/SignInScreen");
+    }
+
+    void signUpButtonHandler() {
+      Navigator.pushNamed(context, '/ProfileScreen');
     }
 
     return SafeArea(
