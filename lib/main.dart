@@ -15,11 +15,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: const SignInScreen(),
       routes: {
-        '/SignInScreen' : (context) => const SignInScreen(),
-        '/SignUpScreen' : (context) => const SignUpScreen(),
-        '/ProfileScreen' : (context) => const ProfileScreen(),
+        '/SignInScreen': (context) => const SignInScreen(),
+        '/SignUpScreen': (context) => const SignUpScreen(),
+        '/ProfileScreen': (context) => const ProfileScreen(),
       },
     );
   }
 }
-
