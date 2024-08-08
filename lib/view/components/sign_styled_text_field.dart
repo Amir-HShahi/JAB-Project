@@ -42,7 +42,7 @@ class _SignStyledTextFieldState extends State<SignStyledTextField> {
                   borderSide: BorderSide(color: Colors.black)),
               focusedBorder: const OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(10)),
-                  borderSide: BorderSide(color: Colors.yellow)),
+                  borderSide: BorderSide(color: Color(0xff0098FF))),
               hintText: widget.hintText,
               hintStyle:
                   GoogleFonts.workSans(color: Colors.black, fontSize: 20),
