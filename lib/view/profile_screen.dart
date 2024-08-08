@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:jab_project/view/components/show_user_data_widget.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -16,9 +17,14 @@ class ProfileScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(height: 30),
+              Text(
+                "My name",
+                style: GoogleFonts.poppins(
+                    fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 55),
               const ShowUserDataWidget(
-                  fieldTitle: "Your Email",
+                  fieldTitle: "Email",
                   fieldIcon: Icons.email_outlined,
                   fieldData: "xxx@gmail.com"),
               const SizedBox(height: 20),
