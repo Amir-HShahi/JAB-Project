@@ -17,10 +17,12 @@ class ProfileScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text(
-                  "Say My name",
-                  style: GoogleFonts.poppins(
-                      fontSize: 20, fontWeight: FontWeight.bold),
+                InkWell(
+                  child: Text(
+                    "Say My name",
+                    style: GoogleFonts.poppins(
+                        fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                 ),
                 const SizedBox(height: 55),
                 const ShowUserDataWidget(
