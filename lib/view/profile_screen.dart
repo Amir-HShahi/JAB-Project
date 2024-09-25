@@ -5,6 +5,8 @@ import 'package:jab_project/view/components/show_user_data_widget.dart';
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
 
+  changeProfileHandler() {}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,6 +20,7 @@ class ProfileScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 InkWell(
+                  onTap: changeProfileHandler,
                   child: Text(
                     "Say My name",
                     style: GoogleFonts.poppins(
