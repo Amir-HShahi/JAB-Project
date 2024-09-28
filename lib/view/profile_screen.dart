@@ -22,7 +22,7 @@ class ProfileScreen extends StatelessWidget {
                 InkWell(
                   onTap: changeProfileHandler,
                   child: Text(
-                    "Say My name",
+                    "Heisenberg",
                     style: GoogleFonts.poppins(
                         fontSize: 20, fontWeight: FontWeight.bold),
                   ),
