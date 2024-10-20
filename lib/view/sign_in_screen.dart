@@ -52,7 +52,7 @@ class SignInScreen extends StatelessWidget {
                         color: Colors.grey)),
                 const SizedBox(height: 40),
                 const SignStyledTextField(
-                    hintText: " Email Address", isSuffixIconActive: false),
+                    hintText: " Username", isSuffixIconActive: false),
                 const SizedBox(height: 20),
                 const SignStyledTextField(
                     hintText: " Password", isSuffixIconActive: true),
