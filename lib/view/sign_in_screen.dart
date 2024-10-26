@@ -31,7 +31,7 @@ class SignInScreen extends StatelessWidget {
             padding: const EdgeInsets.only(top: 60, left: 20, right: 20),
             child: Column(
               children: [
-                Text("Welcome to JAB!",
+                Text("Welcome to Shortener!",
                     style: GoogleFonts.workSans(
                         fontWeight: FontWeight.bold, fontSize: 30)),
                 const SizedBox(height: 40),
